@@ -1,0 +1,164 @@
+    1  sudo apt update
+    2  sudo apt upgrade -y
+    3  sudo snap-store
+    4  sudo snap-store update
+    5  sudo snap update
+    6  sudo snap  hel
+    7  sudo apt update
+    8  sudo apt upgrade -y
+    9  sudo apt install software-properties-common apt-transport-https wget
+   10  wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | agregar clave sudo apt –
+   11  sudo apt install software-properties-common apt-transport-https wget
+   12  wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+   13  sudo add-apt-repositorio «deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main"
+   14  sudo add-apt-repositorio "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main"
+   15  sudo add-apt-repository «deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main"
+   16  sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main"
+   17  sudo apt update
+   18  sudo apt upgrade -y
+   19  sudo apt update
+   20  sudo apt-key list
+   21  /etc/apt/trusted.gpg
+   22  sudo apt-key export BE1229CF | sudo gpd --dearmour -o /etc/apt/trusted.gpg
+   23  sudo apt-key export BE1229CF | sudo gpg --dearmour -o /etc/apt/trusted.gpg
+   24  sudo apt update
+   25  sudo apt-key export BE1229CF | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/microsoft.gpg
+   26  ls /etc/apt
+   27  sudo apt-key export BE1229CF | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/trusted.gpg
+   28  cd /etc/apt
+   29  ls
+   30  sudo cp trusted.gpg trusted.gpg.d
+   31  ls
+   32  sudo apt uppdate
+   33  sudo apt update
+   34  sudo apt install microsoft-edge-stable 
+   35  snap-store --quit && sudo snap refresh snap-store
+   36  sudo apt update && sudo apt upgrade
+   37  sudo apt install ttf-mscorefonts-installer
+   38  reboot
+   39  sudo apt update
+   40  sudo apt upgrade -y
+   41  sudo apt update
+   42  cat /etc/issue
+   43  ls /etc/apt/
+   44  cat /etc/apt/sources.list
+   45  ls /etc/apt/
+   46  sudo apt update
+   47  sudo add-apt-repository ppa:obsproject/obs-studio
+   48  sudo apt update
+   49  sudo apt install ffmpeg obs-studio
+   50  composer
+   51  sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+   52  wget -qO- https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo tee /etc/apt/trusted.gpg.d/pgdg.asc &>/dev/null
+   53  sudo apt update
+   54  sudo apt upgrade -y
+   55  sudo apt update
+   56  sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+   57  sudo apt update
+   58  sudo apt install postgresql postgresql-client -y
+   59  sudo systemctl status postgresql
+   60  psql --version
+   61  sudo -u postgres psql
+   62  psql -h localhost -U postgres -P Prueba123
+   63  psql -h localhost -U postgres -p Prueba123
+   64  psql -h localhost -U postgres -PPrueba123
+   65  psql -h localhost -U postgres
+   66  sudo apt install curl
+   67  sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+   68  sudo apt update
+   69  sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && sudo apt update'
+   70  sudo apt update
+   71  sudo apt install pgadmin4 -y
+   72  sudo apt remove pgadmin4 -y
+   73  sudo apt install pgadmin4-desktop -y
+   74  sudo apt install pgadmin4 -y
+   75  sudo apt install pgadmin4-desktop -y
+   76  sudo apt update -y
+   77  sudo apt upgrade -y
+   78  sudo apt update
+   79  sudo apt upgrade -y
+   80  sudo apt upd
+   81  sudo apt upgrade -y
+   82  sudo apt update
+   83  exit
+   84  sudo apt update
+   85  sudo apt upgrade -y
+   86  sudo apt update -y
+   87  sudo apt upgrade -y
+   88  ls
+   89  cd Descargas/
+   90  tar xvzf oc-4.12.0-linux.tar.gz 
+   91  ls
+   92  sudo cp oc /usr/bin
+   93  oc
+   94  cp kubectl /usr/bin
+   95  sudo cp kubectl /usr/bin
+   96  kubectl
+   97  sudo apt update
+   98  sudo apt upgrade -y
+   99  cd /etc/containers/
+  100  ls
+  101  ls registries.conf.d/
+  102  cat registries.conf
+  103  vim registries.conf
+  104  ls
+  105  oc login --token=sha256~MLoGLgJr4lxud7iDG3HXF6HG5TrB7LCS3-ExVdv7_F8 --server=https://api.cluster-chng6.chng6.sandbox2861.opentlc.com:6443
+  106  oc patch configs.imageregistry.operator.openshift.io/cluster --patch '{"spec":{"defaultRoute":true}}' --type=merge
+  107  HOST=$(oc get route default-route -n openshift-image-registry --template='{{ .spec.host }}')
+  108  echo $HOST
+  109  oc get secret -n openshift-ingress  router-certs-default -o go-template='{{index .data "tls.crt"}}' | base64 -d | sudo tee /etc/pki/ca-trust/source/anchors/${HOST}.crt  > /dev/null
+  110  sudo podman login -u kubeadmin -p $(oc whoami -t) $HOST
+  111  vim registries.conf
+  112  sudo vim registries.conf
+  113  echo $HOST
+  114  podman login -u `oc whoami` -p `oc whoami --show-token` ${HOST}
+  115  cd ~
+  116  ls -la
+  117  cd .config/
+  118  ls
+  119  cd /etc/containers/
+  120  ls
+  121  cat policy.json 
+  122  ls registries.conf
+  123  ls registries.conf.d/
+  124  cat registries.conf.d/shortnames.conf 
+  125  oc get pod -o wide --no-headers | awk '{ print $6 }'
+  126  oc login --token=sha256~MLoGLgJr4lxud7iDG3HXF6HG5TrB7LCS3-ExVdv7_F8 --server=https://api.cluster-chng6.chng6.sandbox2861.opentlc.com:6443
+  127  oc get pod -o wide --no-headers | awk '{ print $6 }'
+  128  oc get route/default-route-openshift-image-registry --no-headers -n openshift-image-registry | awk '{ print $2 }'
+  129  cat /etc/haproxy
+  130  oc get secret -n openshift-ingress  router-certs-default -o go-template='{{index .data "tls.crt"}}' | base64 -d | sudo tee /etc/pki/ca-trust/source/anchors/${HOST}.crt  > /dev/null
+  131  oc patch configs.imageregistry.operator.openshift.io/cluster --patch '{"spec":{"defaultRoute":true}}' --type=merge
+  132  oc get secret -n openshift-ingress  router-certs-default -o go-template='{{index .data "tls.crt"}}' | base64 -d | sudo tee /etc/pki/ca-trust/source/anchors/${HOST}.crt  > /dev/null
+  133  oc patch configs.imageregistry.operator.openshift.io/cluster --patch '{"spec":{"defaultRoute":true}}' --type=merge
+  134  HOST=$(oc get route default-route -n openshift-image-registry --template='{{ .spec.host }}')
+  135  echo $HOST
+  136  podman login -u kubeadmin -p $(oc whoami -t) --tls-verify=false $HOST 
+  137* oc create secret tls public-route-tls-n openshift-image-registry --cert=</path/to/tls.crt>     --key=</path/to/tls.key>
+  138  oc patch configs.imageregistry.operator.openshift.io/cluster --type merge -p '{"spec":{"defaultRoute":true}}'
+  139  echo $HOST
+  140  $ oc patch configs.imageregistry.operator.openshift.io/cluster --type merge -p '{"spec":{"defaultRoute":true}}'DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+  141  oc policy add-role-to-user registry-viewer user2
+  142  oc policy add-role-to-user registry-editor user2
+  143  oc get nodes
+  144  oc get pods -n openshift-image-registry
+  145  history > ~/comandosterminal.txt
+  146  cd ~/Descargas/
+  147  ls
+  148  tar -zxvf helm-v3.12.2-linux-amd64.tar.gz 
+  149  mv linux-amd64/helm /usr/local/bin/
+  150  sudo mv linux-amd64/helm /usr/local/bin/
+  151  helm
+  152  oc login --token=sha256~meHV0St-PYShhQbGhUJOK1y6lgYqRSZ1Cx6ouOc-nE8 --server=https://api.cluster-chng6.chng6.sandbox2861.opentlc.com:6443
+  153  $ oc -n openshift-monitoring get configmap cluster-monitoring-config
+  154  oc -n openshift-monitoring get configmap cluster-monitoring-config
+  155  touch cluster-monitoring-config.yaml
+  156  vim cluster-monitoring-config.yaml 
+  157  oc apply -f cluster-monitoring-config.yaml 
+  158  oc -n openshift-user-workload-monitoring get configmap user-workload-monitoring-config
+  159  touch user-workload-monitoring-config.yaml
+  160  vim user-workload-monitoring-config.yaml 
+  161  oc apply -f user-workload-monitoring-config.yaml 
+  162  oc -n openshift-monitoring edit configmap cluster-monitoring-config
+  163  oc get nodes
+  164  history > ~/comandosterminal2.txt
