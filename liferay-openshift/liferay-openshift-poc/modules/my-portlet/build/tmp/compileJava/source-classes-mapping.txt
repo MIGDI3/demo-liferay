@@ -1,0 +1,4 @@
+my/portlet/constants/MyPortletKeys.java
+ my.portlet.constants.MyPortletKeys
+my/portlet/portlet/MyPortlet.java
+ my.portlet.portlet.MyPortlet
